@@ -1,0 +1,104 @@
+title:           Chroniques Binaires
+description:
+disqus_shortname:
+reading_time:     true
+words_per_minute: 200
+url:
+
+# Owner/author information
+owner:
+  name:
+  avatar:      style/avatar.png
+  bio:         "French engineer with over 2 years' working experience as a full-stack software engineer in the telecommunication industry, and currently located in Singapore."
+  email:
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:
+  facebook:
+  github: vdesgrange
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:
+
+# Background image to be tiled on all pages
+background:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+disqus_shortname: chroniques-binaires
+
+timezone:    Asia/Singapore
+future:      false  # publish future dated posts --  true, false (default)
+highlighter: rouge
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate-v2
+    #  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
+
+collections:
+  gallery:
+    output: true
+    permalink: /:collection/:name
+  code:
+    output: true
+    permalink: /:collection/:name
+  chronicles:
+    output: true
+    permalink: /:collection/:name
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 1
+  permalink: ':num/'
+  sort_field: 'date'
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include:
+  - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

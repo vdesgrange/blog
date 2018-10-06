@@ -1,0 +1,9 @@
+# Menu navigation links
+- title: Chroniques
+  url: /chronicles/
+
+- title: Code
+  url: /code/
+
+- title: Galerie
+  url: /gallery/
